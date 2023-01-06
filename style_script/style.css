@@ -1,0 +1,60 @@
+/* mobile phone M */
+@media screen and (max-width: 320px) {
+  /* navbar */
+  .container nav .brand h2 {
+    font-size: 25px;
+  }
+
+  .container .tombol {
+    width: 80px;
+  }
+
+  .container .tombol button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .container .menu-toggle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .container .menu-toggle .the-span {
+    height: 15px;
+  }
+
+  .container .menu-toggle span {
+    width: 18px;
+  }
+  /* end navbar */
+
+
+  /* header */
+  header {
+    row-gap: 20px;
+  }
+
+  header .welcoming p {
+    font-size: 13px;
+  }
+
+  header .profile {
+    height: 224px;
+  }
+
+  header .profile .photo {
+    width: 115px;
+    height: 115px;
+  }
+
+  header .profile .title p {
+    font-size: 15px;
+  }
+
+  /* end of header */
+
+
+  footer {
+    font-size: 12px;
+  }
+}

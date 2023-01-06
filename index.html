@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_script/style.css">
+  <title>Evan Alifian | Homepage</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      list-style: none;
+      text-decoration: none;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @font-face {
+      font-family: 'sranger';
+      src: url('media/spaceranger.ttf') format('truetype');
+    }
+
+    body {
+      background-color: rgb(20, 20, 20);
+      color: whitesmoke;
+      overflow-x: hidden;
+      transition: .2s;
+    }
+    
+    .disclaimer {
+      display: none;
+      color: #333;
+    }
+
+    .switch {
+      background-color: rgb(252, 246, 237);
+      color: rgb(27, 27, 27);
+      transition: .2s;
+    }
+
+    nav.navigation {
+      box-shadow: 0 1px 3px #333;
+    }
+
+    .welcoming.welcome {
+      background-color: rgb(163, 163, 163);
+      box-shadow: 2px 2px 2px #333;
+      transition: .1s;
+    }
+
+    .project .music-project .image .overlay .text.chcolor {
+      color: whitesmoke;
+    }
+
+    .social-media.sosmed ul li a {
+      color: rgb(1, 45, 46);
+      border: 2.8px solid darkcyan;
+      transition: .1s;
+    }
+
+    .social-media.sosmed ul li a:hover {
+      background-color: rgb(176, 223, 208);
+    }
+    
+    .comment form input.tcolor, .comment form textarea.tcolor {
+      color: #333;
+    }
+
+    .comment form button.button {
+      background-color: rgb(65, 65, 65);
+      color: white;
+    }
+
+    .comment form button.button:hover {
+      background-color: rgb(87, 87, 87);
+    }
+
+    footer.color {
+      color: rgba(27, 27, 27, 0.808);
+    }
+  </style>
+</head>
+<body>
+  <!-- container -->
+  <div class="container">
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="brand">
+        <a href="#home" style="color: whitesmoke; text-decoration: none;">
+          <h2 style="cursor: pointer;">evan Alifian</h2>
+        </a>
+      </div>
+      
+      <ul class="list" id="list">
+        <li><a href="#about">About</a><hr></li>
+        <li><a href="#music">Music</a><hr></li>
+        <li><a href="#project">Project</a><hr></li>
+        <li><a href="#comment">Message</a><hr></li>
+      </ul>
+
+      <div class="tombol">
+        <button type="button" id="btn">[/]</button>
+
+        <div class="menu-toggle" id="button">
+          <div class="the-span">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="welcoming" id="welcoming">
+        <p>Welcome to Evan Alifian portfolio website</p>
+      </div>
+
+      <div class="profile">
+        <div class="title">
+          <h1 style="font-size: 1.5em;">Evan Alifian</h1>
+          <p>Student | Web Developer | Music Maker</p>
+        </div>
+        <div class="photo"></div>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- about -->
+    <div class="about" id="about">
+      <div class="title">
+        <h3>About</h3>
+        <hr style="border-top: 3px solid #666; margin-top: 6px; display: inline-block; width: 61.5px;">
+      </div>
+      <div class="text">
+        <p>Evan Alifian is a Student, Web Developer, and Music Maker from Madura, East Java, Indonesia. He was born on October 19, 2005 in Madiun. He is a student from Vocational High School 2 Bangkalan and majoring Software Enginering. Now he lives at Nangka Six street, Perumnas Kamal, Madura.</p>
+      </div>
+
+      <a href="#project">Go to Project ></a>
+    </div>
+    <!-- end of about -->
+
+    <!-- music video -->
+    <div class="music" id="music">
+      <div class="title">
+        <h3>Music Video on YouTube</h3>
+        <hr style="border-top: 3px solid #666; margin-top: 6px; display: inline-block; width: 254px;">
+      </div>
+      <div class="video">
+        <figure>
+          <div class="iframe-container">
+            <iframe src="https://www.youtube.com/embed/yWgvRtMRU0k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <figcaption class="fs-5 mt-2">Vandersn - Discovery</figcaption>
+        </figure>
+      </div>
+    </div>
+    <!-- end of music video -->
+
+    <!-- project -->
+    <div class="project" id="project">
+      <div class="title">
+        <h3>My Projects</h3>
+        <hr style="border-top: 3px solid #666; margin-top: 6px;
+        display: inline-block; width: 121px;">
+        <p>Here i do some project, starting from music project and my web portfolio.</p>
+      </div>
+
+      <div class="music-project">
+        <div class="title">
+          <h4>Music Project</h4>
+        </div>
+        <ul class="image">
+          <li>
+            <a href="#img-one">
+              <div class="img one"></div>
+              <span>View more</span>
+            </a>
+            <div class="overlay" id="img-one">
+              <a href="#project" class="close">x close</a>
+              <img src="media/bg1.jpg" alt="">
+              <p class="text" id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nulla aliquam minima possimus obcaecati eum.</p>
+            </div>
+          </li>
+          <li>
+            <a href="#img-two">
+              <div class="img two"></div>
+              <span>View more</span>
+            </a>
+            <div class="overlay" id="img-two">
+              <a href="#project" class="close">x close</a>
+              <img src="media/bg2.jpg" alt="">
+              <p class="text" id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nesciunt cum praesentium tempora perferendis? Molestiae autem quia eaque nihil porro!</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="portfolio" id="portfolio">
+        <div class="title">
+          <h4>Portfolio Project</h4>
+        </div>
+        <ul class="image">
+          <li>
+            <a href="#img-three">
+              <div class="img one"></div>
+              <span>View more</span>
+            </a>
+            <div class="overlay" id="img-three">
+              <a href="#portfolio" class="close">x close</a>
+              <img src="media/img1.png" alt="">
+              <p class="text" id="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, magnam suscipit corporis quibusdam mollitia sequi.</p>
+            </div>
+          </li>
+          <li>
+            <a href="#img-four">
+              <div class="img two"></div>
+              <span>View more</span>
+            </a>
+            <div class="overlay" id="img-four">
+              <a href="#portfolio" class="close">x close</a>
+              <img src="media/img2.png" alt="">
+              <p class="text" id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laudantium porro harum perspiciatis suscipit cumque repudiandae natus? Corrupti.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end of project -->
+
+    <!-- social media -->
+    <div class="social-media" id="social-media">
+      <div class="title">
+        <h3>Social Media</h3>
+        <hr style="border-top: 3px solid #666; margin-top: 6px;
+        display: inline-block; width: 130px;">
+      </div>
+      <ul>
+        <li><a href="https://www.instagram.com/evanalifian/" target="_blank">Instagram</a></li>
+        <li><a href="https://web.facebook.com/profile.php?id=100074264594248" target="_blank">Facebook</a></li>
+        <li><a href="https://youtube.com/channel/UCoEG4U-fI8iu8b8YyyTf1Ig"target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+    <!-- end of social media -->
+
+    <!-- comment -->
+    <div class="comment" id="comment">
+      <div class="title" style="cursor: default;">
+        <h3>Leave a comment here</h3>
+        <h4>(not working!)</h4>
+      </div>
+      <form>
+        <div class="name">
+          <label for="name">Name :</label>
+          <input type="text" id="name">
+        </div>
+        <div class="email">
+          <label for="email">Email :</label>
+          <input type="email" id="email">
+        </div>
+        <div class="message">
+          <label for="message">Comment/Message :</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      <p style="cursor: default;">Thanks for your comment :)</p>
+    </div>
+    <!-- end of comment -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <p>&copy; 2022 Evan Alifian. All Rights Reserved</p>
+    </footer>
+    <!-- akhir footer -->
+  </div>
+  <!-- end of container -->
+
+
+
+  <!-- javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
